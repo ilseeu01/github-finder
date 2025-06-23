@@ -98,4 +98,11 @@ class UI {
   hideSpinner() {
     this.spinner.style.display = "none";
   }
+
+  // Show GitHub heatmap (잔디밭)
+  showContributionHeatmap(username) {
+    document.querySelector("#contributions").style.display = "block";
+    GitHubCalendar(".calendar", username);
+}
+
 }

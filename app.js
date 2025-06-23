@@ -24,6 +24,8 @@ searchUser.addEventListener("keyup", (e) => {
         // Show profile
         ui.showProfile(data.profile);
         ui.showRepos(data.repos);
+        ui.showContributionHeatmap(data.profile.login);
+
       }
     });
   } else {
